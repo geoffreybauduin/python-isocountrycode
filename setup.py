@@ -5,7 +5,12 @@ ISO Country Codes
 
 Provides enums for ISO Country Codes
 """
+import sys
 from setuptools import setup
+
+install_requires = []
+if sys.version_info < (3, 4):
+    install_requires.append("enum==0.4.6")
 
 setup(
     name='isocountrycode',
@@ -21,9 +26,7 @@ setup(
     packages=['isocountrycode'],
     zip_safe=False,
     platforms='any',
-    install_requires=[
-        "enum==0.4.6",
-    ],
+    install_requires=install_requires,
     test_suite='tests',
     classifiers=[
         'Environment :: Web Environment',
