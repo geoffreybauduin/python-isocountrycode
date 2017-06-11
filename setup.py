@@ -14,7 +14,7 @@ if sys.version_info < (3, 4):
 
 setup(
     name='isocountrycode',
-    version='1.0',
+    version='1.1',
     url='http://github.com/geoffreybauduin/python-isocountrycode',
     license='MIT',
     author='Geoffrey Bauduin',
